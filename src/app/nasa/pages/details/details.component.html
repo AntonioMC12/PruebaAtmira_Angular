@@ -1,0 +1,5 @@
+<mat-spinner class="loading" *ngIf="!apod; else divDetails"></mat-spinner>
+
+<ng-template #divDetails>
+  <app-details-card [apod]="apod!"></app-details-card>
+</ng-template>

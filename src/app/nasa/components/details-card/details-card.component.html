@@ -1,0 +1,26 @@
+<div class="container">
+  <div>
+    <h1 class="center">
+      {{ apod!.title }}
+    </h1>
+  </div>
+  <mat-divider></mat-divider>
+  <div fxLayout="row" class="animate__animated animate__fadeInUp">
+    <div fxFlex="50" class="picture">
+      <img [src]="apod!.url" alt="imagen de la nasa" />
+    </div>
+    W
+    <div fxFlex="50">
+      <h3 class="explanation">{{ apod!.explanation }}</h3>
+      <br />
+      <button
+        mat-fab
+        color="primary"
+        aria-label="back to list button"
+        (click)="goDashboard()"
+      >
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

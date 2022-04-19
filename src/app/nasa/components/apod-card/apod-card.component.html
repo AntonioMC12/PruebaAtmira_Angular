@@ -1,0 +1,37 @@
+<div class="card">
+  <div
+    id="image"
+    class="wrapper"
+    style="
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5) 1%,
+          rgba(0, 0, 0, 0) 55%,
+          rgba(0, 0, 0, 0.5)
+        ),
+        url({{this.apod.url}}) center / cover no-repeat;
+    "
+  >
+    <div class="top">
+      <div class="date">
+        <span class="day">{{ this.apod.date }}</span>
+      </div>
+    </div>
+    <div class="data-section">
+      <div class="content">
+        <div class="side-caption">NASA</div>
+        <div class="heading">
+          <a routerLink="/nasa/details" [state]="this.apod"
+            >{{ this.apod.title }}
+          </a>
+        </div>
+        <div class="data">
+          {{ this.apod.explanation | explanation }}
+        </div>
+        <a routerLink="/nasa/details" [state]="this.apod" class="button"
+          >Read More</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
