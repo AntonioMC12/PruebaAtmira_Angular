@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Target Demo
 
-You can follow this [link](https://pruebaangular-antonio.netlify.app/nasa/dashboard) to visit the demo website.
+You can follow this [link](https://pruebaangular-antonio.netlify.app) to visit the demo website.
 
 ## Development server
 
